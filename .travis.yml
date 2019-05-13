@@ -7,6 +7,7 @@ before_install:
 
 script:
   - docker run kbron111/docker-react-ci-testing npm run test -- --coverage
+  - echo $?
 
 env:
   - CI=true
