@@ -6,4 +6,5 @@ before_install:
   - docker build -t kbron111/docker-react-ci-testing -f Dockerfile.dev .
 
 script:
+  - EXPORT CI=true
   - docker run kbron111/docker-react-ci-testing npm run test -- --coverage
