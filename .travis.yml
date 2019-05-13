@@ -6,4 +6,4 @@ before_install:
   - docker build -t kbron111/docker-react-ci-testing -f Dockerfile.dev .
 
 script:
-  - docker run kbron111/docker-react-ci-testing npm run test
+  - docker run kbron111/docker-react-ci-testing npm run test -- --coverage
