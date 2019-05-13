@@ -5,6 +5,9 @@ services:
 before_install:
   - docker build -t kbron111/docker-react-ci-testing -f Dockerfile.dev .
 
+script:
+  - echo hello
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
